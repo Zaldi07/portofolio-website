@@ -6,7 +6,9 @@
   box-sizing: 0;
   font-family: 'Poppins', sans-serif;
 }
-
+body {
+  scroll-behavior: smooth;
+}
 img {
   max-width: 100%;
 }
@@ -16,7 +18,7 @@ a {
 }
 
 :root {
-  --primary-color: #fb6a27;
+  --primary-color: #34b5de;
   --dark-color: #0f0f0f;
   --gray-color: gray;
 
@@ -28,7 +30,7 @@ a {
 section {
   padding: 70px 0;
 }
-section > .section-title {
+section > .container .section-title {
   font-size: var(--h2-font-size);
   font-weight: bold;
   text-transform: uppercase;
@@ -49,5 +51,36 @@ section > .section-title {
 }
 .navbar .nav-item .nav-link:hover,
 .navbar .nav-item .nav-link.active {
-  color: var(--primary-color);
+  color: rgb(134, 134, 217);
+}
+.header-section .header-img {
+  width: 90%;
+}
+.portofolio-section .card .card-img-top {
+  height: 270px;
+  width: 100%;
+  object-fit: cover;
+}
+.portofolio-section .card .skill-portofolio {
+  width: 27%;
+}
+
+.accordion-collapse img {
+  height: 100px;
+  padding-left: 3%;
+}
+@media (max-width: 767.98px) {
+  .portofolio-section .card .card-img-top {
+    height: 130px;
+  }
+  .header-section .header-img {
+    padding-top: 20px;
+  }
+  .accordion-collapse img {
+    height: 40px;
+    padding-left: 3%;
+  }
+  .portofolio-section .card .card-body div span {
+    font-size: 10px;
+  }
 }
